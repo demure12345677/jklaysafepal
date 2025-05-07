@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.safepal.com/en/blog/tron-multisig-scam by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 16:54:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta HTTP-EQUIV="Content-Type" content="text/html; charset=SHIFT_JIS"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+    <meta name="description" content="SafePal Blog,Tron Multi-Sig Scams: What They Are  And How To Prevent Them,SafePal Crypto Wallet Blog Home Page,SFP,SafePal App">
+    <meta name="keywords" content="SafePal Blog|Tron-multisig-scam|Safepal Wallet|SFP|BTC|ETH">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> -->
+    <meta name="apple-mobile-web-app-capable"  content="yes">
+    <title>SafePal Blog|Tron-multisig-scam|SFP|SafePal Crypto Wallet</title>
+
+    <!-- Favicons -->
+    <link href="https://www.safepal.com/favicon.ico" rel="icon">
+    <!-- ios apple-touch-icon -->
+    <link rel="apple-touch-icon" sizes="48x48" href="https://www.safepal.com/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet"> -->
+
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/animate.css/animate.min64b9.css?v=202505071746582777330" rel="stylesheet">
+    <link href="../../assets/vendor/aos/aos64b9.css?v=202505071746582777330" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min64b9.css?v=202505071746582777330" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons64b9.css?v=202505071746582777330" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min64b9.css?v=202505071746582777330" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min64b9.css?v=202505071746582777330" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="../../assets/css/common64b9.css?v=202505071746582777330">
+    <link rel="stylesheet" href="../../assets/css/header64b9.css?v=202505071746582777330">
+    <link rel="stylesheet" href="../../assets/css/footer64b9.css?v=202505071746582777330">
+
+    <!-- <link href="/assets/css/style.css?v=202505071746582777330" rel="stylesheet"> -->
+
+    <script>
+        var email_can_not_be_empty = "Email can not be empty!";
+        var email_format_is_not_correct = "Email format is not correct!";
+        var thank_you_for_subscribing = "Thank you for subscribing!";
+        var please_input_correct_email = "Please input correct email";
+        var please_input_your_first_name = "Please input your first name";
+        var please_input_your_last_name = "Please input your last name";
+        var please_input_your_job_title = "Please input your job title";
+        var please_input_correct_website = "Please input correct website";
+        var please_input_zipcode = "Please input zipcode";
+        var please_input_country_or_region = "Please input Country or region";
+        var current_lang = "en";
+        function handleImageError(img, defaultImageUrl) {
+            img.src = defaultImageUrl;
+            img.onerror = null;
+        }
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DW1PZY4LZ8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DW1PZY4LZ8');
+    </script>
+    <!-- Twitter conversion tracking base code -->
+    <script>
+        !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+        },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='../../../static.ads-twitter.com/uwt.js',
+        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+        twq('config','o201i');
+    </script>
+    <!-- End Twitter conversion tracking base code -->
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-xxl banner-container-1440 banner-container-991">
+        <div class="justify-content-center align-items-center">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- pc - logo -  -->
+                <a href="../index.html" class="logo logo-light">
+                    <img src="https://www.safepal.com/assets/img/logo-light.svg" alt="" class="img-fluid"></a>
+                    <!-- pc - dark logo -->
+                <a href="../index.html" class="logo logo-dark">
+                    <img src="https://www.safepal.com/assets/img/logo-dark.svg" alt="" class="img-fluid"></a>
+                <!-- m --logo  -->
+                <a href="../index.html" class="final-mark-logo">
+                    <img style="height:24px;" src="https://www.safepal.com/assets/img/logo-light.svg" alt="" class="img-fluid"></a>
+                <!-- m --dark logo -->
+                <a href="../index.html" class="final-dark-logo">
+                    <img style="height:24px;" src="https://www.safepal.com/assets/img/logo-dark.svg" alt="" class="img-fluid"></a>
+                
+                <!-- m --logo  -->
+                <!-- <a href="/" class="final-mark-logo">
+                    <img src="/assets/img/safepal-final-mark-logo.svg" alt="" class="img-fluid"></a> -->
+                <!-- m --dark logo -->
+                <!-- <a href="" class="final-dark-logo">
+                    <img src="/assets/img/safepal-final-dark-logo.svg" alt="" class="img-fluid"></a> -->
+                    <!-- style="position:unset;" -->
+                <nav id="navbar" class="navbar">
+                    <div id="language-m" class="position-relative d-lg-none language"></div>
+                    <!-- mobile dowload btn -->
+                    <div class="d-lg-none show-download-btn downloads-btn">
+                        <!-- <div class="">
+                            <a href="/download">
+                                <button type="button" class="btn-common my-downloads-btn animate__animated animate__pulse">Download</button>
+                            </a>
+                        </div> -->
+                        <div class="downloads-nav-toggle">
+                            <a href="../download.html">
+                                <svg class="mobile-download-light" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="#FCFCFC" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 10L12 15L17 10" stroke="#FCFCFC" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 15V3" stroke="#FCFCFC" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg class="mobile-download-dark" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="#0D0B33" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 10L12 15L17 10" stroke="#0D0B33" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 15V3" stroke="#0D0B33" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <ul>
+                        <div class="d-lg-none d-flex justify-content-between align-items-center dropdown-mobile-logo">
+                            <div class="dropdown-logo">
+                                <img src="https://www.safepal.com/assets/img/dropdown-mobile-logo.svg" alt="" srcset="">
+                            </div>
+                            <div class="dropdown-off">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.636 8.223L17.131 0.727997L19.272 2.86899L11.777 10.364L19.272 17.859L17.131 20L9.636 12.505L2.141 20L0 17.859L7.495 10.364L0 2.86899L2.141 0.727997L9.636 8.223Z" fill="#4A21EF"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <li class="dropdown new-dropdown dropdown-c">
+                            <a class="scrollto" href="#hero">
+                                <span>Products</span>
+                                <i class="bi bi-chevron-down"></i>
+                                <i class="bi bi-caret-down-fill"></i>
+                                <i style="display: none;" class="bi bi-caret-up-fill"></i>
+                                <i class="d-lg-none bi bi-plus"></i>
+                                <i class="d-lg-none bi bi-dash"></i>
+                            </a>
+                            <ul class="d-none d-lg-block dropdown-box dropdown-box-c">
+                                <div class="dropdown-box-content dropdown-box-content-c">
+                                    <div data-name='hardware_wallet_s1' class="box-item">
+                                        <a class="item" href="../store/s1.html">
+                                            <img src="../../assets/img/header/icon_s1.png" alt="">
+                                            <div>
+                                                <h3 class="item-title">S1 Hardware Wallet</h3>
+                                                <p class="text">The most popular combination to safeguard crypto assets for experienced users</p>
+                                            </div>
+                                            
+                                        </a>
+                                    </div>
+                                    <div data-name='hardware_wallet_s1pro' class="box-item">
+                                        <a class="item" href="../store/s1pro.html">
+                                            <img src="../../assets/img/header/icon_s1pro.png" alt="">
+                                            <div>
+                                                <h3 class="item-title">S1 Pro Hardware Wallet</h3>
+                                                <p class="text">Enhanced version of the flagship air-gappped SafePal S1, with improved specifications</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-name='hardware_wallet_x1' class="box-item">
+                                        <a class="item" href="../store/x1.html">
+                                            <img src="../../assets/img/header/icon_x1.png" alt="">
+                                            <div>
+                                                <h3 class="item-title">X1 Hardware Wallet</h3>
+                                                <p class="text">Fully open-sourced bluetooth hardware wallet for ease of crypto management</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-name='cypher' class="box-item">
+                                        <a class="item" href="../store/cypher.html">
+                                            <img src="../../assets/img/header/icon_cypher.png" alt="">
+                                            <div>
+                                                <h3 class="item-title">Cypher</h3>
+                                                <p class="text">Store and protect your 12, 18 and 24 word seed phrases against water, fire and corrosion.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-name='leather_case' class="box-item">
+                                        <a class="item" href="../store/leathercase.html">
+                                            <img src="../../assets/img/header/icon_leather_case.png" alt="">
+                                            <div>
+                                                <h3 class="item-title">Leather Case</h3>
+                                                <p class="text">Premium protection for your hardware wallet against scratches and  bumps.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-name='all_products' class="box-item">
+                                        <a class="item" href="../store.html">
+                                            <img src="../../assets/img/header/icon_all.png" alt="">
+                                            <div>
+                                                <h3 class="item-title">View All Products</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="d-lg-none dropdown-mobile dropdown-mobile-c">
+                                <li data-name='all_products' class="box-item">
+                                    <a class="item" href="../store.html">
+                                        <img src="../../assets/img/header/icon_all.png" alt="">
+                                        <div>
+                                            <h3 class="item-title">View All Products</h3>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li data-name='hardware_wallet_s1' class="box-item">
+                                    <a class="item" href="../store/s1.html">
+                                        <img src="../../assets/img/header/icon_s1.png" alt="">
+                                        <div>
+                                            <h3 class="item-title">S1 Hardware Wallet</h3>
+                                            <p class="text">The most popular combination to safeguard crypto assets for experienced users</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                                <li data-name='hardware_wallet_s1pro' class="box-item">
+                                    <a class="item" href="../store/s1pro.html">
+                                        <img src="../../assets/img/header/icon_s1pro.png" alt="">
+                                        <div>
+                                            <h3 class="item-title">S1 Pro Hardware Wallet</h3>
+                                            <p class="text">Enhanced version of the flagship air-gappped SafePal S1, with improved specifications</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li data-name='hardware_wallet_x1' class="box-item">
+                                    <a class="item" href="../store/x1.html">
+                                        <img src="../../assets/img/header/icon_x1.png" alt="">
+                                        <div>
+                                            <h3 class="item-title">X1 Hardware Wallet</h3>
+                                            <p class="text">Fully open-sourced bluetooth hardware wallet for ease of crypto management</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li data-name='cypher' class="box-item">
+                                    <a class="item" href="../store/cypher.html">
+                                        <img src="../../assets/img/header/icon_cypher.png" alt="">
+                                        <div>
+                                            <h3 class="item-title">Cypher</h3>
+                                            <p class="text">Store and protect your 12, 18 and 24 word seed phrases against water, fire and corrosion.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li data-name='leather_case' class="box-item">
+                                    <a class="item" href="../store/leathercase.html">
+                                        <img src="../../assets/img/header/icon_leather_case.png" alt="">
+                                        <div>
+                                            <h3 class="item-title">Leather Case</h3>
+                                            <p class="text">Premium protection for your hardware wallet against scratches and  bumps.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown new-dropdown dropdown-c">
+                            <a class="scrollto" href="#hero">
+                                <span>App</span>
+                                <i class="bi bi-caret-down-fill"></i>
+                                <i style="display: none;" class="bi bi-caret-up-fill"></i>
+                                <i class="d-lg-none bi bi-plus"></i>
+                                <i class="d-lg-none bi bi-dash"></i>
+                            </a>
+                            <ul class="d-none d-lg-block dropdown-box dropdown-box-c">
+                                <div class="dropdown-box-content dropdown-box-content-c dropdown-box-content-c-app">
+                                    <div data-name='safepal_app' class="box-item border-none">
+                                        <a class="item" href="../appinfo.html">
+                                            <img src="../../assets/img/header/icon_app.png" alt="">
+                                            <div>
+                                                <h3 class="item-title">SafePal App</h3>
+                                                <p class="text">iOS & Android</p>
+                                            </div>
+                                            
+                                        </a>
+                                    </div>
+                                    <div data-name='safepal_extension' class="box-item border-none">
+                                        <a class="item" href="../extension.html">
+                                            <img src="../../assets/img/header/icon_extension.png" alt="">
+                                            <div>
+                                                <h3 class="item-title">Browser Extension</h3>
+                                                <p class="text">Chrome, Edge & Firefox</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-name='safepal_min' class="box-item border-none">
+                                        <a class="item" href="https://t.me/SafePalMiniBot/SFPmini" target="_bank">
+                                            <img src="../../assets/img/header/icon_safepal_mini.png" alt="">
+                                            <div>
+                                                <h3 class="item-title">SafePal Mini</h3>
+                                                <p class="text">Telegram Mini App @SafePalMiniBot</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="d-lg-none dropdown-mobile dropdown-mobile-c">
+                                <li data-name='safepal_app' class="box-item border-none">
+                                    <a class="item" href="../appinfo.html">
+                                        <img src="../../assets/img/header/icon_app.png" alt="">
+                                        <div>
+                                            <h3 class="item-title">SafePal App</h3>
+                                            <p class="text">iOS & Android</p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                                <li data-name='safepal_extension' class="box-item border-none">
+                                    <a class="item" href="../extension.html">
+                                        <img src="../../assets/img/header/icon_extension.png" alt="">
+                                        <div>
+                                            <h3 class="item-title">Browser Extension</h3>
+                                            <p class="text">Chrome, Edge & Firefox</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li data-name='safepal_min' class="box-item border-none">
+                                    <a class="item" href="https://t.me/SafePalMiniBot/SFPmini" target="_bank">
+                                        <img src="../../assets/img/header/icon_safepal_mini.png" alt="">
+                                        <div>
+                                            <h3 class="item-title">SafePal Mini</h3>
+                                            <p class="text">Telegram Mini App @SafePalMiniBot</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="scrollto" href="../bank.html">Bank</a></li>
+                        <li class="dropdown"><a class="scrollto" href="../coin/lists.html">Assets</a></li>
+                        <li class="dropdown new-dropdown">
+                            <a class="scrollto" href="../sfp.html">SFP</a>
+                        </li>
+                        <li class="dropdown new-dropdown">
+                            <!-- <a class="scrollto" href="/about">About</a> -->
+                            <a class="scrollto" href="#hero">
+                                <span>About</span>
+                                <i class="bi bi-caret-down-fill"></i>
+                                <i style="display: none;" class="bi bi-caret-up-fill"></i>
+                                <i class="d-lg-none bi bi-plus"></i>
+                                <i class="d-lg-none bi bi-dash"></i>
+                            </a>
+                            <ul class="d-none d-lg-block dropdown-box">
+                                <div class="dropdown-box-content">
+                                    <div class="dropdown-box-item">
+                                        <div class="">
+                                            <li data-path="/about"><a href="../about.html">About Us</a></li>
+                                            <li><a href="../joinus.html">Join Us</a></li>
+                                            <li><a href="https://safepalsupport.zendesk.com/hc/en-us/requests/new?ticket_form_id=360001760732">Contact Us</a></li>
+                                            <li data-path="blog"><a href="../blog.html">Blog</a></li>
+                                            <li><a href="academy.html">SafePal Academy</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="d-lg-none dropdown-mobile">
+                                <li><a href="../about.html">About Us</a></li>
+                                <li><a href="../joinus.html">Join Us</a></li>
+                                <li><a href="https://safepalsupport.zendesk.com/hc/en-us/requests/new?ticket_form_id=360001760732">Contact Us</a></li>
+                                <li><a href="../blog.html">Blog</a></li>
+                                <li><a href="academy.html">SafePal Academy</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <i class="mobile-nav-toggle">
+                        <img class="mobile-nav-light" src="https://www.safepal.com/assets/img/icon-meun-mobile.svg" alt="" sizes="" srcset="">
+                        <!-- 深色 -->
+                        <img class="mobile-nav-dark" src="https://www.safepal.com/assets/img/icon-meun-mobile-dark.svg" alt="" sizes="" srcset="">
+                    </i>
+                </nav><!-- .navbar -->
+
+                <!-- downloads -->
+                <div class="downloads-btn">
+                    <div id="language" class="position-relative language"></div>
+                    <div class="set-off-btn animate__animated animate__pulse">
+                        <div class="set-off-btn animate__animated animate__pulse">
+                            <a href="../download.html">
+                                <button type="button" class="btn-common my-downloads-btn animate__animated animate__pulse">Download</button>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header><!-- End Header -->
+
+<script>
+    // setTimeout(() => {
+    //     if (location.pathname.includes('/checkout')) {
+    //         document.getElementById('cartIcon').style.display = 'none'
+    //     }
+    // }, 200);
+</script>
+<link href="../../assets/css/blog_one64b9.css?v=202505071746582777330" rel='stylesheet'>
+<script type="text/javascript" src="../../new_v2/js/jquery.min.js"></script>
+<script>
+
+    $( document ).ready(function() {
+
+        $('#article-search-input').bind('keypress',function(event){
+            if(event.keyCode == "13") {
+                var s=$("#article-search-input").val();
+                window.location.href = '/blog/query/?s='+s;
+            }
+        });
+    });
+
+    function toggleInputClear() {
+        const input = document.getElementById('article-search-input');
+        const clearButton = document.getElementById('articles-input-clear');
+
+        if (input.value) {
+            clearButton.style.visibility = 'visible'; // 显示按钮
+        } else {
+            clearButton.style.visibility = 'hidden'; // 隐藏按钮
+        }
+    }
+
+    function clearInput() {
+        const input = document.getElementById('article-search-input');
+        input.value = ''
+        toggleInputClear()
+    }
+</script>
+<main id="main" class="blog-list">
+    <section id="hero" class="position-relative">
+        <div class="hero">
+            <div class="hero-bg">
+                <div class="container position-relative hero-container d-flex flex-column flex-lg-row">
+
+                    <div class="article-left">
+                                                    <h1 class="article-title">Tron Multi-Sig Scams: What they are  and how to prevent them</h1>
+                            <div class="article-time">Sep 14,2024</div>
+                            <div class="article-content">
+                                <!-- wp:paragraph -->
+<p><img width="624" height="351" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdCHPcCY9_QQfivC1HV6fLUMje0CrNcMR06hZYAF6k8POXP3Wjw8EgJ7zVhgPJy9xC6Q1TH5DZjTXW-Zrsw6U2SKhSATXR9cXECWu6FgCXkEvZaW6642u_fi6cj9m9FZp4TaQ16KZ1hEDb7FAagf9kP-H8C?key=E_uEU-E6_00imUeCYtG0Ag"></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>With the rapid evolution of blockchain technology, we are enjoying its numerous benefits and new possibilities. However, this progress has also opened doors for malicious actors who exploit technological vulnerabilities to perpetrate fraud and attacks. In this section, we will delve into a specific threat — the Tron Multi-signature Scam—outlining its tactics and providing advice on how to safeguard your assets.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Single-signature Wallet VS Multi-signature Wallet on Tron</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In a single-signature wallet, only one user (the transaction initiator) signs the transaction, so a single-signature wallet cannot provide shared control over cryptocurrency. Multi-signature wallets solve the shared control problem by introducing an approval quorum, where multiple signatures from different co-signers are required to authorize a transaction. Therefore, we can see that multi-signature wallets have the following advantages:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>&nbsp;Multi-sig wallets enhance security by requiring multiple private keys to authorize a transaction. This added layer of protection significantly reduces the chances of unauthorized access and theft of funds.</li><li>Multiple signature functions allow for permission grading, and each permission can correspond to multiple private keys. This makes it possible to achieve joint control of accounts with multiple people.&nbsp;</li><li>It can also make it difficult for hackers to steal funds from a wallet, because they must have the different keys to complete the action. This feature is especially desirable and useful when the assets belong to multiple parties in a company or a decentralized autonomous organization (DAO) etc.</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>When a TRON Multi-Signature wallet is created, the default permission for the wallet owner is assigned to the account itself with a threshold of one. In other words, transfers from the wallet only require authorization signed by one address.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Note: Owner permissions represent the highest level of control over a TRON account. With this permission, an address can operate the account in various ways.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Using deceptive mnemonic phrases, scammers change the user’s TRX account permissions to gain owner access, increasing the threshold to two. In this scenario, to send cryptos from the wallet, authorization needs to be signed by both the user’s address and the scammer’s address.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>How does the Tron Multi-signature Scam Work?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The common TRON multi-signature scams involve malicious actors claiming that TRX is needed to pay transaction fees in order to convince victims to share TRX tokens.&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Another scam involves tricking victims into sharing their private keys or seed phrases and converting their wallets into the multi-signature type to maliciously control the assets. Such scams are often done via the following methods or channels:&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><li>Promoting top-up websites on social media platforms such as Telegram to lure users to deposit with their digital tokens. Some scammers can get the owner permissions of a user’s account while they are making deposits.</li><li>The scammers release their mnemonic phrases or private keys on social media platforms such as Telegram and WhatsApp to lure users to send TRX as transaction fees into wallets. In actuality,&nbsp; the owner permissions of those wallets have already been transferred by scammers, resulting in all TRX in the wallets being stolen.</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Usually the scammers will spread seed phrases and wallets online to phish victims into importing them into the SafePal Wallet App.&nbsp; Releasing their mnemonics or private keys on social media platforms such as Telegram and WhatsApp to lure users to send $TRX as transaction fees into wallets. But in fact, the owner permissions of those wallets have already been transferred by scammers. In the end, all TRX in the wallets will be stolen by the scammers. The following screenshot is an example:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdINIoYQFnJC-NSZhdcnNWq1bgQabeE73tpetS44oeKjt_yQF4DVkgVvRM6hw6IM5VzKrUM298hkX7M3VAsjgcyP0mV82nldg0hDeq0gE8VAYE_TPZVbrumqclGWsD1S7HXAW_oxXTVgKsikxfMNzZE2COh?key=E_uEU-E6_00imUeCYtG0Ag" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>These seed phrases are configured as multi-sig(multi-signature), allowing&nbsp; only the scammers to move the cryptos in the wallet. For more details and explanation about the multi-signature wallet, you can refer to the article in this<a href="https://developers.tron.network/docs/multi-signature"> <strong>link</strong></a>. When you are trying to transfer or move cryptos from the wallet and see the error message: SIGERROR code, or notifications such as "The private key of this address does not exist in the wallet. You cannot transfer assets from this address", this means you are mostly using a multi-sig wallet created by the scammers!&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Note: If your SafePal wallet is the latest one, you will see the following warning message to warn you of the multi-sig scam:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXerqfajqkDDfcE4iwsPMs34gGSPoustj2Kf0qP3h9NudQROPzPlI5TNy1g3INJxXQL6CVOeSAFSLhhUG3viwFhlQH3t-BivCQZI-ftTkgiJmdSFfHBt93SduSbQH9NC2EYRQ8cPKO3P8jkn8Gq-Lo1jZt0?key=E_uEU-E6_00imUeCYtG0Ag" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>As such Tron multi-sig wallets require signatures from both the user’s address and the scammer’s address to approve transactions — any transaction made by the user will also require&nbsp; authorization from the scammer’s address. If the scammer’s signature is missing, users will encounter an error message saying “SIGERROR” in the SafePal wallet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Consider a company with two partners who believe that all significant decisions should be authorized only if both partners agree (i.e., a multisignature requirement). If one partner disagrees, the decision is not approved.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A Multisig TRON account operates similarly. Thus, even with the mnemonic phrase, the account user cannot transfer tokens on their own.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Users can only transfer cryptos into their account but cannot transfer them out. Scammers exploit this by playing a long game. If a user only receives payments into the account from others and never checks the account permissions, tokens can continue to be transferred into the account.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>How to Prevent Multi-signature&nbsp; Scams?</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The following are some useful tips to prevent the multi-signature scams:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>Never use the wallet or mnemonic phrase shared or given by others</li><li>Securely keep and protect your mnemonic phrase and private key in safe locations&nbsp;</li><li>Always beware of scammers and be wary of strangers on social media, especially the people who DM you first as it is usually too good to be true.</li><li>Never share your private keys or mnemonic phrases with anyone, even if they claim to be technical support or a friend (SafePal team members will never ask for your private keys or mnemonic/seed phrases and any who do are likely impersonators)</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":1} -->
+<h1>Closing</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Technology is developing rapidly. When enjoying and using nascent technology and products, we must always be wary of new scams and remain vigilant.&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If you encounter or discover any cases of fraud, please report them to SafePal's customer service channel<a href="https://safepalsupport.zendesk.com/hc/en-us/requests/new?ticket_form_id=360001760732"> here</a>, for team members to follow up in a timely manner and warn other users.&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Remember, the key to effective protection against e-signature software phishing scams lies in proactive prevention, continuous vigilance, and a comprehensive cybersecurity strategy tailored to the evolving landscape and threats. Stay informed, stay vigilant, and stay secure.</p>
+<!-- /wp:paragraph -->                            </div>
+                        
+                        <div class="article-wiget">Recent Posts</div>
+                        <div class="act-content">
+                                                            <a href="hardware-wallet-upgrade.html">
+                                    <div class="act-box">
+                                        <div>
+                                            <img src="../../../blogcontent.safepal.com/uploads/2025/04/Hardware-upgrade.png"
+                                                 alt="">
+                                        </div>
+                                        <div class="act-text">
+                                            <div class="title">
+                                                Upgrade of the SafePal Hardware Line: Understanding EAL Certifications                                            </div>
+                                            <div class="date">Apr 06,2025</div>
+                                        </div>
+
+
+                                    </div>
+                                </a>
+                                                            <a href="viction-vic-integration.html">
+                                    <div class="act-box">
+                                        <div>
+                                            <img src="../../../blogcontent.safepal.com/uploads/2025/03/VIC-1024x576.png"
+                                                 alt="">
+                                        </div>
+                                        <div class="act-text">
+                                            <div class="title">
+                                                SafePal Officially Supports Viction (VIC)                                            </div>
+                                            <div class="date">Apr 03,2025</div>
+                                        </div>
+
+
+                                    </div>
+                                </a>
+                                                            <a href="tradoor-giftbox-exclusive.html">
+                                    <div class="act-box">
+                                        <div>
+                                            <img src="../../../blogcontent.safepal.com/uploads/2025/03/gbtw_tradoor.png"
+                                                 alt="">
+                                        </div>
+                                        <div class="act-text">
+                                            <div class="title">
+                                                SafePal x Tradoor Giftbox Exclusive                                            </div>
+                                            <div class="date">Mar 27,2025</div>
+                                        </div>
+
+
+                                    </div>
+                                </a>
+                                                    </div>
+                    </div>
+                    <div class="article-right">
+                        <div class="article-search">
+                            <div class="article-search-box">
+                                <input id="article-search-input" class="article-search-input" data-require="true"
+                                       type="text" placeholder="search..." oninput="toggleInputClear()"/>
+                                <span class="input-prefix">
+                                    <svg t="1739950251188" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                         xmlns="http://www.w3.org/2000/svg" p-id="2472" width="15" height="15">
+                                        <path
+                                                d="M913.067 878.933l-166.4-166.4c55.466-64 89.6-149.333 89.6-238.933 0-204.8-166.4-366.933-366.934-366.933S102.4 264.533 102.4 469.333s166.4 366.934 366.933 366.934c93.867 0 174.934-34.134 238.934-89.6l166.4 166.4c4.266 4.266 12.8 8.533 17.066 8.533s12.8-4.267 17.067-8.533c17.067-8.534 17.067-25.6 4.267-34.134zM153.6 469.333C153.6 294.4 294.4 153.6 469.333 153.6s315.734 140.8 315.734 315.733c0 85.334-34.134 166.4-89.6 221.867C640 746.667 558.933 780.8 473.6 780.8c-179.2 4.267-320-136.533-320-311.467z"
+                                                p-id="2473"></path>
+                                    </svg>
+                                </span>
+                                <span id="articles-input-clear" class="input-suffix" onclick="clearInput()">
+                                    <svg t="1739955391717" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                         xmlns="http://www.w3.org/2000/svg" p-id="5131" width="15" height="15">
+                                        <path
+                                                d="M806.584 251.085a25.6 25.6 0 1 0-36.208-36.209L512 473.252 253.624 214.876a25.6 25.6 0 1 0-36.208 36.168L475.79 509.46 217.416 767.836a25.6 25.6 0 1 0 36.208 36.168L512 545.628l258.376 258.376a25.6 25.6 0 1 0 36.208-36.168L548.21 509.46l258.375-258.416z"
+                                                p-id="5132"></path>
+                                    </svg>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="recent-posts">
+                            <div class="widget-title">Recent Posts</div>
+                            <ul>
+                                                                    <li>
+                                    <span>
+                                        <svg t="1740035196070" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" p-id="8204" width="14" height="14">
+                                            <path
+                                                    d="M251.25 452.4l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 616.301l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 780.2l253.3 0 0 29.801-253.3 0 0-29.801ZM884.457 301.407l0-0.189-0.189 0L649.214 65.204 649.214 65l-29.8 0L610 65 139.5 65l0 894 744.957 0L884.457 340.592l0-39.068 0.043-0.059L884.457 301.407zM649.214 107.445l195.155 195.94-195.155-0.015L649.214 107.445zM854.656 929.2 169.3 929.2 169.3 94.8l450.114 0 0 208.571L619.414 318.3l0 14.9 235.242-0.015L854.656 929.2z"
+                                                    fill="#272636" p-id="8205"></path>
+                                        </svg>
+                                    </span>
+                                        <a href="hardware-wallet-upgrade.html">Upgrade of the SafePal Hardware Line: Understanding EAL Certifications</a>
+                                    </li>
+                                                                    <li>
+                                    <span>
+                                        <svg t="1740035196070" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" p-id="8204" width="14" height="14">
+                                            <path
+                                                    d="M251.25 452.4l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 616.301l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 780.2l253.3 0 0 29.801-253.3 0 0-29.801ZM884.457 301.407l0-0.189-0.189 0L649.214 65.204 649.214 65l-29.8 0L610 65 139.5 65l0 894 744.957 0L884.457 340.592l0-39.068 0.043-0.059L884.457 301.407zM649.214 107.445l195.155 195.94-195.155-0.015L649.214 107.445zM854.656 929.2 169.3 929.2 169.3 94.8l450.114 0 0 208.571L619.414 318.3l0 14.9 235.242-0.015L854.656 929.2z"
+                                                    fill="#272636" p-id="8205"></path>
+                                        </svg>
+                                    </span>
+                                        <a href="viction-vic-integration.html">SafePal Officially Supports Viction (VIC)</a>
+                                    </li>
+                                                                    <li>
+                                    <span>
+                                        <svg t="1740035196070" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" p-id="8204" width="14" height="14">
+                                            <path
+                                                    d="M251.25 452.4l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 616.301l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 780.2l253.3 0 0 29.801-253.3 0 0-29.801ZM884.457 301.407l0-0.189-0.189 0L649.214 65.204 649.214 65l-29.8 0L610 65 139.5 65l0 894 744.957 0L884.457 340.592l0-39.068 0.043-0.059L884.457 301.407zM649.214 107.445l195.155 195.94-195.155-0.015L649.214 107.445zM854.656 929.2 169.3 929.2 169.3 94.8l450.114 0 0 208.571L619.414 318.3l0 14.9 235.242-0.015L854.656 929.2z"
+                                                    fill="#272636" p-id="8205"></path>
+                                        </svg>
+                                    </span>
+                                        <a href="tradoor-giftbox-exclusive.html">SafePal x Tradoor Giftbox Exclusive</a>
+                                    </li>
+                                                                    <li>
+                                    <span>
+                                        <svg t="1740035196070" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" p-id="8204" width="14" height="14">
+                                            <path
+                                                    d="M251.25 452.4l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 616.301l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 780.2l253.3 0 0 29.801-253.3 0 0-29.801ZM884.457 301.407l0-0.189-0.189 0L649.214 65.204 649.214 65l-29.8 0L610 65 139.5 65l0 894 744.957 0L884.457 340.592l0-39.068 0.043-0.059L884.457 301.407zM649.214 107.445l195.155 195.94-195.155-0.015L649.214 107.445zM854.656 929.2 169.3 929.2 169.3 94.8l450.114 0 0 208.571L619.414 318.3l0 14.9 235.242-0.015L854.656 929.2z"
+                                                    fill="#272636" p-id="8205"></path>
+                                        </svg>
+                                    </span>
+                                        <a href="mexc-giftbox-exclusive.html">SafePal x MEXC GiftBox Exclusive</a>
+                                    </li>
+                                                                    <li>
+                                    <span>
+                                        <svg t="1740035196070" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" p-id="8204" width="14" height="14">
+                                            <path
+                                                    d="M251.25 452.4l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 616.301l521.5 0 0 29.8-521.5 0 0-29.8ZM251.25 780.2l253.3 0 0 29.801-253.3 0 0-29.801ZM884.457 301.407l0-0.189-0.189 0L649.214 65.204 649.214 65l-29.8 0L610 65 139.5 65l0 894 744.957 0L884.457 340.592l0-39.068 0.043-0.059L884.457 301.407zM649.214 107.445l195.155 195.94-195.155-0.015L649.214 107.445zM854.656 929.2 169.3 929.2 169.3 94.8l450.114 0 0 208.571L619.414 318.3l0 14.9 235.242-0.015L854.656 929.2z"
+                                                    fill="#272636" p-id="8205"></path>
+                                        </svg>
+                                    </span>
+                                        <a href="sfplus-walletconnect-wct.html">SFPlus x WalletConnect Reward Pool</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<div class="one-wallet-footer">
+    <div class="one-wallet-footer-main">
+        <!-- ================= ---------one - wallet--------- ===================== -->
+        <section id="one-wallet">
+            <div class="one-wallet d-flex justify-content-center align-items-center flex-column">
+                <div class="sfp-logo d-flex justify-content-center align-items-center">
+                    <div class="logo-box move-animation-Y">
+                        <img class="img-fluid" src="https://www.safepal.com/assets/img/safePal-extension-icon.svg" alt="">
+                    </div>
+                </div>
+                <div class="title animate__animated animate__fadeInDown">
+                    <h3>
+                        Everything you need in one wallet.                    </h3>
+                </div>
+                <div class="download">
+                    <div class="btn-out set-off-btn animate__animated animate__pulse">
+                        <div class="btn-inner set-off-btn animate__animated animate__pulse">
+                            <a href="https://www.safepal.com/download">
+                                <button type="button"
+                                        class="downloads-btn animate__animated animate__pulse light-green-effect">
+                                    Download SafePal Wallet                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container footer-top">
+        <div class="row footer-top-box">
+            <div
+                    class="col-lg col-md-6 col-sm-6 col-6 order-lg-1 order-md-1 order-sm-1 footer-products col-xs-6 top-item">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="../appinfo.html">SafePal App</a></li>
+                    <!-- <li><a href="https://www.safepal.com/en/store/s1">Hardware Wallet</a></li> -->
+                    <li><a href="../store/s1.html">SafePal S1</a></li>
+                    <li><a href="../store/s1pro.html">SafePal S1 Pro</a></li>
+                    <li><a href="../store/x1.html">SafePal X1</a></li>
+                    <li><a href="../extension.html">Extension Wallet</a></li>
+                    <li><a href="../store/cypher.html">Cypher Seed Board</a></li>
+                    <li><a href="../store/leathercase.html">Leather Case</a></li>
+                    <li><a href="https://www.safepal.com/upgrade">Firmware Upgrade</a></li>
+                    <li><a href="../kol.html">Experts' Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg col-md-6 col-sm-6 col-6 order-lg-2 order-md-3 order-sm-3 footer-support col-xs-6 top-item">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="https://safepalsupport.zendesk.com/hc/en-us">Help Center</a></li>
+                    <li><a href="../track.html">Track my order</a></li>
+                    <li><a href="https://safepalsupport.zendesk.com/hc/en-us/categories/360004554271-Troubleshooting">Technical Issues</a></li>
+                    <li><a href="https://safepalsupport.zendesk.com/hc/en-us/articles/360047261272">Device Authentication</a></li>
+                    <li><a href="https://safepalsupport.zendesk.com/hc/en-us/requests/new?ticket_form_id=360001760732">Submit A Request</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg col-md-6 col-sm-6 col-6 order-lg-3 order-md-5 order-sm-5 footer-partner col-xs-6 top-item">
+                <h3>Partner</h3>
+                <ul>
+                    <li><a href="../reseller.html">Reseller</a></li>
+                    <li><a href="../affiliate.html">Affiliate</a></li>
+                    <li><a target="_blanck" href="https://forms.gle/YJqSv326oR5i49g29">Submit a Token</a></li>
+                    <li><a target="_blanck" href="https://forms.gle/4czF6T9Z569uyU2h8">Submit a DApp</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg col-md-6 col-sm-6 col-6 order-lg-4 order-md-2 order-sm-2 footer-about col-xs-6 top-item">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="../about.html">The Company</a></li>
+<!--                    <li><a href="">Careers</a></li>-->
+                    <li><a href="../sfp.html">SFP Token</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../brandassets.html">Brand Resource Center</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                    <li><a href="../joinus.html">Join Us</a></li>
+
+
+<!--                    <li><a href="">Campaigns</a></li>-->
+<!--                    <li><a href="https://www.safepal.com/pub/Safepal_Media_Kit.pdf?v=1">Media Kit</a></li>-->
+<!--                    <li><a href="#">Contact Us</a></li>-->
+                </ul>
+            </div>
+            <div class="col-lg col-md-6 col-sm-6 col-6 order-lg-5 order-md-4 order-sm-4 footer-legal col-xs-6 top-item">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../about/terms.html">Terms of Service</a></li>
+                    <li><a href="../about/privacy.html">Privacy Policy</a></li>
+                    <li><a href="../about/shipping.html">Shipping Policy</a></li>
+                    <li><a href="../about/refund.html">Refund Policy</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <div
+                class="copyright d-flex justify-content-between align-items-lg-center align-items-start flex-lg-row flex-column">
+            <div class="safepay d-flex justify-content-start align-items-center">
+                <div class="logo">
+                    <img src="https://www.safepal.com/assets/img/footer/icon-safepay-footer.svg" alt="">
+                </div>
+                <div class="text">
+                    <p>© 2024 SafePal</p>
+                </div>
+            </div>
+            <div class="contact d-lg-none">
+                <p style="word-spacing: inherit;word-break: normal;white-space: break-spaces;word-wrap: break-word;">Press release contact: <a href="mailto:Marketing@safepal.com">Marketing@safepal.com</a></p>
+            </div>
+            <div class="link d-flex align-items-center flex-wrap flex-lg-nowrap">
+                <div class="contact link-item d-none d-lg-block">
+                    <p>Press release contact: <a href="mailto:Marketing@safepal.com">Marketing@safepal.com</a></p>
+                </div>
+                <div class="link-item twitter">
+                    <a href="https://twitter.com/iSafePal" target="_blacnk"><img style="padding: 4px;" src="https://www.safepal.com/assets/img/footer/icon-twitter.svg" alt=""></a>
+
+                </div>
+                <div class="link-item discord">
+                    <a href="https://discord.com/invite/BuKynZqRNj" target="_blacnk">
+                        <img src="https://www.safepal.com/assets/img/footer/icon-discord.svg" alt="" srcset="">
+                    </a>
+
+                </div>
+                <div class="link-item youtube">
+                    <a href="https://www.youtube.com/channel/UCfqztNiZWV62Eu9kiqKf6WQ" target="_blacnk">
+                        <img src="https://www.safepal.com/assets/img/footer/icon-youtube.svg" alt="">
+                    </a>
+                </div>
+                <div class="link-item telegram">
+                    <a href="https://t.me/SafePalTG" target="_blacnk">
+                        <img src="https://www.safepal.com/assets/img/footer/icon-telegram.svg" alt="">
+                    </a>
+
+                </div>
+                <div class="link-item instagram">
+                    <a href="https://www.instagram.com/isafepal/" target="_blacnk">
+                        <img src="https://www.safepal.com/assets/img/footer/icon-instagram.svg" alt="">
+                    </a>
+
+                </div>
+                <div class="link-item linkedin">
+                    <a href="https://www.linkedin.com/company/14504410/admin/" target="_blacnk">
+                        <img src="https://www.safepal.com/assets/img/footer/icon-linkedin.svg" alt="">
+                    </a>
+
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/iSafePal" target="_blacnk">
+                        <img src="https://www.safepal.com/assets/img/footer/icon-facebook.svg" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+</div>
+
+<a class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
+<script src="../../assets/js/jquery-3.6.0.min64b9.js?v=202505071746582777330"></script>
+<script src="../../assets/vendor/ajaxPromise.min64b9.js?v=202505071746582777330"></script>
+<script src="../../assets/vendor/jquery-cookie64b9.js?v=202505071746582777330"></script>
+<script src="../../assets/vendor/loading.min64b9.js?v=202505071746582777330"></script>
+<script src="../../assets/vendor/language.min64b9.js?v=202505071746582777330"></script>
+<script src="../../assets/vendor/countdown.min64b9.js?v=202505071746582777330"></script>
+<!-- <script src="/assets/vendor/language.js?v=202505071746582777330"></script> -->
+<script src="../../assets/vendor/aos/aos64b9.js?v=202505071746582777330"></script>
+<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min64b9.js?v=202505071746582777330"></script>
+<script src="../../assets/vendor/glightbox/js/glightbox.min64b9.js?v=202505071746582777330"></script>
+<script src="../../assets/vendor/swiper/swiper-bundle.min64b9.js?v=202505071746582777330"></script>
+<script src="../../assets/vendor/waypoints/noframework.waypoints64b9.js?v=202505071746582777330"></script>
+<!-- Template Main JS File -->
+<script src="../../assets/js/common64b9.js?v=202505071746582777330"></script>
+<script> var url_lang = "en";</script>
+<script>
+    // setTimeout(() => {
+    //     if (location.pathname.includes('/checkout')) {
+    //         document.getElementById('cartIcon').style.display = 'none'
+    //     }
+    // }, 200);
+    var $select_text = "select";
+    var $search_text = "Search";
+    var $search_by_name = "Search by name";
+    var $Ok = "Ok";
+    var $cancel = "Cancel";
+    var $items = "items";
+    var $total = "Total";
+    var $my_cart = "My Cart";
+    var cartEmpty = "Your cart is empty.";
+    var $client_country = "NG";
+
+    var $safepal_leather_case = "SafePal Leather Case";
+    var $safepal_cypher_seed_board = "SafePal Cypher Seed Board";
+    var $safepal_s1_hardware_wallet = "SafePal S1 Hardware Wallet";
+    var $checkout = "Checkout";
+    var $standard_shipping = "Standard Shipping";
+    var $express_delivery = "Express Delivery";
+    var $days = "Days";
+    var safepal_x1_hardware_wallet = "SafePal X1 Hardware Wallet";
+    var safepal_s1pro_hardware_wallet = "SafePal S1 Pro Hardware Wallet";
+    
+    var deluxe_bundle = `Essential Bundles`;
+    var expert_Bundle = `Expert Bundle`;
+    var ultra_deluxe_bundle = `Utlimate Value Bundle`;
+    var expert_choice = `Classic Bundle`;
+    var backup_package = `Backup bundle`;
+    var hardcore_bundle = `Holder's Bundle`;
+    var standard_package = `Basic Bundle`;
+</script>
+
+<script>
+    (function () {
+        "use strict";
+        if (location.pathname.includes('/checkout')) {
+            // $('#language').language();
+            // $('#language-m').language();
+        } else {
+            if (!location.pathname.includes('/payment')) {
+                window.sessionStorage.removeItem('fill');
+            }
+            window.sessionStorage.removeItem('cnHasTurn')
+        }
+        $('#language').language();
+        $('#language-m').language(document.body);
+        function getUrlParam(name) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regexS = "[\\?&]" + name + "=([^&#]*)";
+            var regex = new RegExp(regexS);
+            var results = regex.exec(window.location.href);
+            if (results == null)
+                return "";
+            else
+                return decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+        let channel_code = getUrlParam("item");
+        if (channel_code) {
+            $.cookie('channel_code', channel_code, { expires: 3, path: '/' })
+        } else {
+            $.cookie('channel_code', 'office1', { expires: 365, path: '/' })
+        }
+    })()
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93c23c1c3ea87762',t:'MTc0NjYzNjgyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../cdn-cgi/challenge-platform/h/b/scripts/jsd/701fd2559006/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+
+<!-- Mirrored from www.safepal.com/en/blog/tron-multisig-scam by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 16:54:59 GMT -->
+</html>
